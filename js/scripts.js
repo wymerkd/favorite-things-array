@@ -11,5 +11,9 @@ $(document).ready(function() {
     console.log(bestFavThings);
     $("ul#fav-list").append("<li>" + bestFavThings[0] + "</li>" + "<li>" + bestFavThings[1] + "</li>" + "<li>" + bestFavThings[2] + "</li>");
 
+    var flavors = ["vanilla", "chocolate", "strawberry", "rasberry"];
+    flavors.forEach(function(flavor) {
+      $("ul#fav-list").append("<li>" + flavor + "</li>");
+    });
   });
 });
